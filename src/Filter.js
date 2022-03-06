@@ -1,4 +1,4 @@
-const Filter = () => {
+const Filter = ({ setFilltered, genre, setGenre, popular}) => {
     return (
         <div className="filter">
             <button>All</button>
