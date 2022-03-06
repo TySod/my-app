@@ -1,7 +1,7 @@
 const Filter = ({ setFilltered, genre, setGenre, popular}) => {
     return (
         <div className="filter">
-            <button>All</button>
+            <button onClick={() => set}>All</button>
             <button>Comedy</button>
             <button>Action</button>
         </div>
