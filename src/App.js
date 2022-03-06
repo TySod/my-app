@@ -23,7 +23,7 @@ function App() {
       <Filter setFilltered={setFilltered} genre={genre} setGenre={setGenre} popular={popular} />
       <div className="popular">
         {popular.map(movie => {
-          return <Movie key={movie.div} movie={movie} />
+          return <Movie key={movie.id} movie={movie} />
         })}
       </div>
     </div>
