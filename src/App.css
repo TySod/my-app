@@ -20,4 +20,7 @@ h2 {
   min-width: 5rem;
   padding: 0.5rem 1rem;
   border: none;
+  background: #fff;
+  color: rgb(28, 36, 168);
+  border: 2px solid rgb(28, 36, 168);
 }
