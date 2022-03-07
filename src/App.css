@@ -23,4 +23,11 @@ h2 {
   background: #fff;
   color: rgb(28, 36, 168);
   border: 2px solid rgb(28, 36, 168);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.active {
+  color: #fff;
+  background: rgb(28, 36, 168);
 }
