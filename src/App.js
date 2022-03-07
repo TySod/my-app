@@ -18,7 +18,11 @@ function App() {
   }
   return (
     <div className="App">
-      app
+      <div className="popular">
+        {movies.map(movie => {
+          return;
+        })}
+      </div>
     </div>
   );
 }
