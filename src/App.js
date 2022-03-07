@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <div className="popular">
         {popular.map(movie => {
-          return <Movie />
+          return <Movie key={movie.div} movie={movie} />
         })}
       </div>
     </div>
