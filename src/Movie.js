@@ -1,7 +1,8 @@
-const Movie = () => {
+const Movie = ({movie}) => {
     return ( 
         <div className="movie">
-            <h2>Title</h2>
+            <h2>{ movie.title}</h2>
+            <img src={"https://image.tmdb.org/t/p/w500" + movie.backdrop_path} alt="" />
         </div>
     );
 }
