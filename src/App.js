@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import './App.css';
 import Filter from './Filter';
@@ -7,6 +6,7 @@ import Movie from './Movie';
 function App() {
   const [popular, setPopular] = useState([]);
   const [filltered, setFilltered] = useState([]);
+  const [genre, setGenre] = useState(0);
 
   useEffect(() => {
     fetchPopular()
