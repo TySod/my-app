@@ -4,8 +4,8 @@ import './App.css';
 import Movie from './Movie';
 
 function App() {
-  const [popular, setPopular] = useState();
-  const [filltered, setFilltered] = useState();
+  const [popular, setPopular] = useState([]);
+  const [filltered, setFilltered] = useState([]);
 
   useEffect(() => {
     fetchPopular()
