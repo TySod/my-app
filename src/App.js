@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
+import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+  const [popular, setPopular] = useState();
+
+  useEffect(() => {
+    fetchPopular()
+  }, [])
+
+  const fetchPopular = async () => {
+    const data = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=dc1d26857287b10af9a1e79039526d44');
+    const movies = await data.json();
+    setPopular(movies.results)
+    console.log(movies)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      app
     </div>
   );
 }
